@@ -6,3 +6,18 @@
 
 // solution
  
+let input;
+do {
+    let input = +prompt("Guess a number between 1 to 10");
+    let randomNumber = Math.floor(Math.random() * 10) + 1;
+    console.log(randomNumber);
+    
+    if (input === randomNumber) {
+        console.log("Welcome, you guessed the right number!");
+        break;
+    } else if (input > randomNumber) {
+        console.log("Too high, try again");
+    } else {
+        console.log("Too low, try again");
+    }
+} while (true);
